@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+
+locale: 'bn'
+
+collections:
+  - name: "posts"
+    label: "পোস্ট"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "শিরোনাম", name: "title", widget: "string" }
+      - { label: "তারিখ", name: "date", widget: "datetime" }
+      - { label: "বিষয়", name: "tag", widget: "select", options: ["জীবনধারা", "ভ্রমণ", "রান্নাঘর", "বই", "অভ্যাস", "ফটো"] }
+      - { label: "সংক্ষেপ", name: "excerpt", widget: "string" }
+      - { label: "লেখা", name: "body", widget: "markdown" }
