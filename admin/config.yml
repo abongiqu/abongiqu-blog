@@ -18,3 +18,4 @@ collections:
       - { label: "বিষয়", name: "tag", widget: "select", options: ["জীবনধারা", "ভ্রমণ", "বই", "অভ্যাস", "ফটো"] }
       - { label: "সংক্ষেপ", name: "excerpt", widget: "string" }
       - { label: "লেখা", name: "body", widget: "markdown" }
+future: true
