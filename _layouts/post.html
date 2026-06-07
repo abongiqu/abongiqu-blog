@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article>
+  <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--light-line);">
+    <h1 style="font-size: 1.8rem; font-weight: 400; line-height: 1.4; margin-bottom: 0.5rem;">{{ page.title }}</h1>
+    <div style="font-size: 0.85rem; color: var(--muted);">
+      {{ page.date | date: "%Y-%m-%d" }}
+      {% if page.tag %} &nbsp;·&nbsp; {{ page.tag }}{% endif %}
+    </div>
+    {% if page.excerpt %}
+    <p style="margin-top: 0.8rem; color: var(--muted); font-size: 0.95rem;">{{ page.excerpt }}</p>
+    {% endif %}
+  </header>
+
+  <div style="font-size: 1.05rem; line-height: 2;">
+    {{ content }}
+  </div>
+
+  <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--light-line);">
+    <a href="/" style="font-size: 0.9rem;">← সব লেখা</a>
+  </footer>
+</article>
