@@ -1,1 +1,58 @@
-
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} — এবং ইকু</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fffaf6;
+      --warm-white: #fdf0e4;
+      --ink: #0f0a06;
+      --brown: #b87840;
+      --brown-mid: #d4a060;
+      --brown-soft: #e8c090;
+      --brown-pale: #f2dfc8;
+      --muted: #6b4c30;
+      --light-line: #f0ddd0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Noto Sans Bengali', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+    a { color: var(--brown); text-decoration: none; }
+    a:hover { color: var(--brown-mid); }
+    header {
+      padding: 2rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--light-line);
+      text-align: center;
+    }
+    header h1 { font-size: 1.6rem; font-weight: 400; color: var(--brown); }
+    header nav { margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted); }
+    main { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--light-line);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/">এবং ইকু</a></h1>
+    <nav>জীবনের গল্প</nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>© এবং ইকু</footer>
+</body>
+</html>
