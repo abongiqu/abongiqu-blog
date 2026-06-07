@@ -1,0 +1,6 @@
+title: এবং ইকু
+description: জীবনের গল্প
+url: "https://abongiqu.netlify.app"
+permalink: /:year/:month/:day/:title/
+future: true
+markdown: kramdown
